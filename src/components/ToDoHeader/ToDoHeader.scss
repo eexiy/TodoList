@@ -1,0 +1,46 @@
+.header__wrapper {
+    background: #F3EDF7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+        color: #1C1B1F;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0 auto;
+    }
+
+    &-icon {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}
+
+.search {
+    &-enter {
+        opacity: 0;
+        transform: scale(0.9);
+
+        &-active {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 300ms, transform 300ms;
+        }
+    }
+
+    &-exit {
+        opacity: 1;
+
+        &-active {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 300ms, transform 300ms;
+        }
+
+    }
+
+}
